@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 01</title>
+    <link rel="stylesheet" href="assets/style/normalize.css">
+
 
     <style>
        body>section{
@@ -40,11 +42,11 @@
            position: absolute;
            margin: auto;
            width: 20vw;
-           height: 20vh;
+           height: 20vw;
        }
 
        .center{
-           height: 12vh;
+           height: 12vw;
            width: 12vw;
            border-radius: 100%;
            background: red;
@@ -61,7 +63,7 @@
         body>section>div{
             background: white;
             width: 15vw;
-            height: 15vh;
+            height: 15vw;
             z-index: 100;
             position: absolute;
         }
@@ -70,7 +72,6 @@
            top: 0;
            border-bottom-right-radius: 100%;
        }
-
       body >section>div:nth-child(2) {
            right: 0;
            top: 0;
@@ -86,29 +87,9 @@
            top: 0;
            border-bottom-left-radius: 100%;
        }
-       body > section>div:nth-child(5) {
-           left: 0;
-           bottom: 0;
-           border-top-right-radius: 100%;
-       }
-       body > section>div:nth-child(6) {
-           right: 0;
-           bottom: 0;
-           border-top-left-radius: 100%;
-       }
-       body > section>div:nth-child(7) {
-           left: 0;
-           bottom: 0;
-           border-top-right-radius: 100%;
-       }
-      body > section>div:nth-child(8) {
-           right: 0;
-           bottom: 0;
-           border-top-left-radius: 100%;
-       }
 
         .square{
-            height: 10vh;
+            height: 10vw;
             width: 10vw;
             background: red;
             z-index: 30;
@@ -122,7 +103,7 @@
         }
 
         .circle{
-            height: 25vh;
+            height: 25vw;
             width: 25vw;
             border-radius: 100%;
             background: white;
@@ -136,41 +117,93 @@
 
         }
 
+        .corner{
+            width: 20vw;
+            height: 20vw;
+            background: white;
+            position: absolute;
+        }
+
+        body section:nth-child(1)>.corner{
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 100%;
+        }
+       body section:nth-child(2)>.corner{
+           top: 0;
+           right: 0;
+           border-bottom-left-radius: 100%;
+       }
+       body section:nth-child(3)>.corner{
+           bottom: 0;
+           left: 0;
+           border-top-right-radius: 100%;
+       }
+       body section:nth-child(4)>.corner{
+           bottom: 0;
+           right: 0;
+           border-top-left-radius: 100%;
+       }
+        .middle{
+            background: white;
+            height: 20vw;
+            width: 40vw;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        #up{
+            top: 0;
+            border-bottom-right-radius: 20vw;
+            border-bottom-left-radius:  20vw;
+        }
+       #down{
+           bottom: 0;
+           border-top-right-radius:  20vw;
+           border-top-left-radius:  20vw;
+       }
+
+
     </style>
 </head>
 <body>
 <section>
+    <section class="corner"></section>
     <section class="circle">
         <section class="square"></section>
     </section>
-    <div></div>
-    <div></div>
 </section>
 <section>
+    <section class="corner"></section>
     <section class="circle">
         <section class="square"></section>
     </section>
-    <div></div>
-    <div></div>
 </section>
 <section>
+    <section class="corner"></section>
     <section class="circle">
         <section class="square"></section>
     </section>
-    <div></div>
-    <div></div>
 </section>
 <section>
+    <section class="corner"></section>
     <section class="circle">
         <section class="square"></section>
     </section>
-    <div></div>
-    <div></div>
 </section>
 
 <section>
     <div class="center"></div>
 </section>
+<div class="middle" id="up">
+
+</div>
+<div class="middle" id="down">
+
+</div>
 
 </body>
 </html>

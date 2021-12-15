@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 02</title>
+    <link rel="stylesheet" href="assets/style/normalize.css">
 
     <style>
         header{
-            background: dimgray;
+            background: #161616;
             position: relative;
             height: 100px;
             top: 0;
@@ -34,13 +35,16 @@
             color: yellow;
         }
         nav{
-            background: brown;
+            background: #FFC800;
             display: inline-block;
             margin: auto;
             position: absolute;
-            width: 300px;
+            width: 20vw;
             top: 0;
             bottom: 0;
+        }
+        main{
+            position: relative;
         }
         nav>ul{
             list-style: none;
@@ -59,17 +63,56 @@
             top: 0;
             bottom: 0;
             right: 0;
-            left: 300px;
+            left: 20vw;
             margin: auto;
             padding-left: 10px;
             padding-right: 10px;
-            width: 1180px;
         }
+        main>section>section:nth-child(2){
+            width: 78vw;
+        }
+        footer{
+            background: black;
+            position: relative;
+            height:60px;
+
+        }
+        footer>p{
+            padding-top: 20px;
+            color: white;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 20px;
+            width: 200px;
+        }
+        body>main>section>section:nth-child(2)>p{
+            display: inline-block;
+            width: 75vw;
+        }
+        div{
+            display: inline;
+        }
+        div>img{
+            width: 25vw;
+            margin-top: 10px;
+
+        }
+        body>section>section:nth-child(1){
+            position: relative;
+        }
+        header>img{
+            width: 275px;
+            position: relative;
+            bottom: 40px;
+        }
+
 
     </style>
 </head>
 <body>
 <header>
+    <img src="assets/images/1.png" alt="">
     <ul>
         <li>Home</li>
         <li>Service</li>
@@ -88,6 +131,38 @@
     </nav>
     <section>
         <section>
+            <div>
+                <img src="assets/images/5.jpg">
+            </div>
+            <div>
+                <img src="assets/images/5.jpg">
+            </div>
+            <div>
+                <img src="assets/images/5.jpg">
+            </div>
+
+        </section>
+
+        <section>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dicta id labore magnam
+                provident quidem soluta, suscipit. Deserunt distinctio ea, fugit natus praesentium quasi quidem sapiente
+                similique veniam vero.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aspernatur assumenda aut autem
+                delectus, dicta eum ex hic impedit inventore ipsum quia quo suscipit temporibus veritatis voluptatem
+                voluptatum. Libero?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dicta id labore magnam
+                provident quidem soluta, suscipit. Deserunt distinctio ea, fugit natus praesentium quasi quidem sapiente
+                similique veniam vero.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aspernatur assumenda aut autem
+                delectus, dicta eum ex hic impedit inventore ipsum quia quo suscipit temporibus veritatis voluptatem
+                voluptatum. Libero?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dicta id labore magnam
+                provident quidem soluta, suscipit. Deserunt distinctio ea, fugit natus praesentium quasi quidem sapiente
+                similique veniam vero.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aspernatur assumenda aut autem
+                delectus, dicta eum ex hic impedit inventore ipsum quia quo suscipit temporibus veritatis voluptatem
+                voluptatum. Libero?</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dicta id labore magnam
                 provident quidem soluta, suscipit. Deserunt distinctio ea, fugit natus praesentium quasi quidem sapiente
                 similique veniam vero.</p>
@@ -152,6 +227,10 @@
 
     </section>
 </main>
+
+<footer>
+    <p>Developed by Bimalsha</p>
+</footer>
 
 </body>
 </html>
